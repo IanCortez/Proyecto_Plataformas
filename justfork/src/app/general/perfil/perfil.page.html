@@ -13,4 +13,23 @@
       <ion-title size="large">Mi Perfil</ion-title>
     </ion-toolbar>
   </ion-header>
+
+
+  <ion-card>
+    <ion-card-title> ¡Bienvenido {{user.user_name}} {{user.user_lname}} </ion-card-title>
+    
+    <ion-item>
+      <ion-label position="floating">Correo: {{user.email}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Ubicacion: {{user.ubication}}</ion-label>
+    </ion-item>
+  </ion-card>
+  
+  <ion-buttons>
+    <ion-button (click)="logOut()">Cerrar sesión</ion-button>
+    <ion-button (click)="removerCuenta()")>Eliminar cuenta</ion-button> 
+  </ion-buttons>
+
+
 </ion-content>

@@ -43,10 +43,21 @@ export class GeneralService {
         )
   }
 
+  getAdminFull(): Observable<any> {
+        return this.http.get(`${baseUrl}user_admin/data`).pipe(
+        )
+  }
+
+  removeAdmin(): Observable<any> {
+        return this.http.delete(`${baseUrl}user_admin/destroy`).pipe(
+        )
+  }
+
   setToken(data: string){
     this.token = data;
     window.localStorage['token'] = this.token; 
   }
+
   getToken(){
     var valor = localStorage.getItem('token');
     return valor; 
