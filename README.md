@@ -91,6 +91,15 @@ principales elementos de su negocio.
   
   `npm install`
   
-3. Iniciar el proyecto con `ionic serve`
+3. Ingresar a `src/environments/environment.ts` y modificar la `baseUrl` con el siguiente formato:
+
+``
+http://${tuIP}:7899/
+``
+
+Para encontrar tu IP, usa el commando `ipconfig` en `cmd` en Windows o `ifconfig` en `terminal` en sistemas operativos basados en Linux.
+
+
+5. Iniciar el proyecto con `ionic serve`
 
 
