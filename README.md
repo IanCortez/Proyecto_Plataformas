@@ -51,9 +51,10 @@ adquirir productos de algún restaurante cercano a ellos.
 
 1. Ingresar a la carpeta `backend`
 2. Instalar dependencias con 
-  
-  `npm install`
-  `npm install -g nodemon`
+```
+  npm install
+  npm install -g nodemon
+```
   
 3. Inicar el proyecto con `npm start`
 
