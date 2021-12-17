@@ -29,6 +29,8 @@ adquirir productos de algún restaurante cercano a ellos.
 
 | Ionic Route | Backend URLs | Funcionalidad |
 | ---- | ---- | ---- |
+| `\home` |  `null` | Muestra un menú inicial |
+| `\login` | 
 
 
 
