@@ -20,17 +20,40 @@
 ## Motivación
 
 Al haber más aplicaciones con este formato como Rappi, Llamafood, entre otros, se desarrolla esta aplicación para darle mayor accesibilidad a los usuarios 
-para acceder al servicio proporcionado por Just Fork, centrado principalmente a personas que quieren iniciar su negocio y/o facilitar al usuario poder 
-adquirir productos de algún restaurante cercano a ellos.
+para acceder al servicio proporcionado por Just Fork, centrado principalmente a personas que quieren iniciar su negocio y centrarse en la gestión fácil de los
+principales elementos de su negocio.
 
 
 
 ## Funcionalidades
 
+
+### Rutas
+
 | Ionic Route | Backend URLs | Funcionalidad |
 | ---- | ---- | ---- |
-| `\home` |  `null` | Muestra un menú inicial |
-| `\login` | 
+| `/home` |  `null` | Muestra un menú inicial |
+| `/login/1` | `POST /user_admin/login, data` | Realizar login de un admin | 
+| `/login/2` | `POST /user_admin/sign-up, data` | Realizar registro de un admin |
+| `/perfil` | `PATCH /user_admin/update, data` | Actualiza la información del admin | 
+| `/perfil` | `DELETE /user_admin/destroy` | Elimina la información de admin |
+| `/restaurante` | `GET /restaurants` | Recopila todos los restaurantes |
+| `/restaurante/ver` | `GET /user_admin/resId` | Recopila el ID del restaurante que le pertenece a un admin |
+| `/restaurante/ver` | `GET /restaurants/+id` | Ver el restaurante para un ID dado que le pertenece a un admin |
+| `/restaurante/crear` | `POST /restaurants, data` | Realiza la creación de un restaurante | 
+| `/restaurante/delete` | `DELETE /restaurants` | Elimina la información del restaurante | 
+| `/restaurante/editar` | `PATCH /restaurants, data` | Realiza una actualización de la información del restaurante |  
+| `/restaurante/crear` | `POST /imagenes, data` | Permite guardar una imagen | 
+| `/restaurante/editar` | `POST /imagenes, data` | Permite guardar una imagen | 
+
+
+### Plugins
+
+| Ionic Plugin | Función |
+| ---- | ---- |
+| camara | Tomar imágenes |
+| text-zoom | Alterar el tamaño del texto |
+
 
 
 
